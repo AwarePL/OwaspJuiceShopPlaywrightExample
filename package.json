@@ -1,0 +1,31 @@
+{
+  "name": "owaspPwTsExample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AwarePL/OwaspJuiceShopPlaywrightExample.git",
+  "author": "AwarePL <lukasz@korchowiec.pl>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --write .",
+    "test": "playwright test",
+    "test:debug": "playwright test --headed --debug",
+    "test:debug:trace": "playwright test --headed --debug --trace on-first-retry",
+    "test:debug:trace:all": "playwright test --headed --debug --trace",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  }
+}
